@@ -1,0 +1,50 @@
+@charset "UFT-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #dfdfdf;
+
+}
+
+.login-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    height: 480px;
+    padding: 30px;
+
+}
+
+.login-header{
+    text-align: center;
+    margin: 20px 0 40px 0;
+
+}
+
+.login-header header{
+    color: #333;
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+.login-box .input-field{
+    width: 100%;
+    height: 60px;
+    font-size: 17px;
+    padding: 0 25px ;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    
+}
