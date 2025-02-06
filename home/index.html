@@ -1,50 +1,188 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 580px)">
-    <link rel="shortcut icon" href="imagens/icc.png" type="image/x-icon">
-    
-    <title>Max Sal</title>
+    <link rel="stylesheet" href="mobile\style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"rel="stylesheet">
+    <link rel="shortcut icon" href="imagens/sal.jpg" type="image/x-icon">
+    <title>Max Sal, armazém poçoverdense </title>
 </head>
 <body>
-    <header>
-        <h1>Max Sal</h1>
-        <nav>
-            <a href="#">Cadastro Inicial</a>
-            <a href="#">Controle de Notas</a>
-            <a href="#">Relatorios Gerasis</a>
-            <a href="#">Painel de graficos</a>
-            <a href="#">Entregas</a>
+    <div class="grid-container">
 
-        </nav>
-    </header>
-    <main>
-        <fieldset>
-            <legend>Dados</legend>
-            <form action="#" method="post" autocomplete="on">
-                <label for="iest">Semana:</label>
-                <select name="estado" id="iest">
-                    <option value="#">Segunda</option>
-                    <option value="#">Terça</option>
-                    <option value="#">Quarta</option>
-                    <option value="#">Quinta</option>
-                    <option value="#">Sexta</option>
-                    <option value="#">Sabado</option>
+        <header class="header">
+            <div class="menu-icon" onclick="openSidebar()">
+                <span class="material-icons-outlined">menu </span>
+                    
+                
+            </div>
+            <div class="header-left">
+                <span class="material-icons-outlined">search</span>
+                    
+                    
+            </div>
 
-                </select>
+            <div class="header-right">
+                <span class="material-icons-outlined">notifications</span>
+                <span class="material-icons-outlined">email</span>
+                <span class="material-icons-outlined">account_circle</span>
+                
+                
+                    
+            </div>
 
 
-        </fieldset>
+        </header>
 
-    
+
+        <aside id="sidebar">
+            <div class="sidebar-title">
+                
+                <div class="sidebar-brand">
+                    <span class="material-icons-outlined">inventory</span> Max Sal
+                        
+                        
+                </div>
+
+
+                <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+                    
+
+            </div>
+            <ul class="sidebar-list">
+                <li class="sidebar-list-item">
+                    <span class="material-icons-outlined">dashboard</span> Painel
+                        
+                </li>
+
+                <li class="sidebar-list-item">
+                    <span class="material-icons-outlined">inventory_2</span> produtos
+                    
+                </li>
+
+                <li class="sidebar-list-item">
+                    <span class="material-icons-outlined">fact_check</span> inventário
+                    
+                        
+                </li>
+
+                <li class="sidebar-list-item">
+                    <span class="material-icons-outlined">add_shopping_cart</span> compra
+                    
+                        
+                </li>
+
+                <li class="sidebar-list-item">
+                    <span class="material-icons-outlined">shopping_cart</span>vendas
+                    
+                        
+                </li>
+
+                <li class="sidebar-list-item">
+                    <span class="material-icons-outlined">poll</span> Relatórios
+                     
+                </li>
+
+                <li class="sidebar-list-item">
+                    <span class="material-icons-outlined">settings</span> configurações
+                    
+                        
+                </li>
+
+            </ul>
+
+        </aside>
+
+
+        <main class="main-container">
+            <div class="main-title">
+                <p class="font-weight-bold">PAINEL</p>
+                
+            </div>
+
+            <div class="main-cards">
+
+                <div class="card">
+
+                    <div class="card-inner">
+                        <p class="text-primary">PRODUTOS</p>
+                        <span class="material-icons-outlined text-blue">inventory_2</span>
+                
+
+                    </div>
+                    <span class="text-primary font-weight-bold">1000</span>
+
+                </div>
+
+                <div class="card">
+
+                    <div class="card-inner">
+                        <p class="text-primary">PEDIDOS DE COMPRA</p>
+                        <span class="material-icons-outlined text-orange">add_shopping_cart</span>
+                
+
+                    </div>
+                    <span class="text-primary font-weight-bold">83</span>
+
+                </div>
+
+                <div class="card">
+
+                    <div class="card-inner">
+                        <p class="text-primary">PEDIDOS DE VENDA</p>
+                        <span class="material-icons-outlined text-green">shopping_cart</span>
+                
+
+                    </div>
+                    <span class="text-primary font-weight-bold">79</span>
+
+                </div>
+
+                <div class="card">
+
+                    <div class="card-inner">
+                        <p class="text-primary">ALERTAS DE INVENTÁRIO</p>
+                        <span class="material-icons-outlined text-red">notification_important</span>
+                
+
+                    </div>
+                    <span class="text-primary font-weight-bold">56</span>
+
+                </div>
+            </div>
+
+            <div class="charts">
+
+                <div class="charts-card">
+                    <p class="charts-title"> 5 principais produtos</p>
+                    <div class="bar-chart"></div>
+
+                </div>
+
+                <div class="charts-card">
+                    <p class="charts-title"> pedidos de compra e venda</p>
+                    <div class="area-chart"></div>
+
+                </div>
+
+            </div>
+
+        </main>
+
+
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/4.3.0/apexcharts.min.js"></script>
+
+    <script src="/login/js/escripts.js">
         
 
-    </main>
-    <footer>
-
-    </footer>
+    </script>
+    
 </body>
 </html>
