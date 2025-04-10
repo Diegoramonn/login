@@ -3,93 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/login/estilos/mediaquery/style.css">
     <title>Relatorios</title>
     <style>
 
-@media screen  and (max-width: 992px){
-    .grid-container{
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.2fr 3fr;
-        grid-template-areas:
-        "header" 
-        "main";
-    }
-    #sidebar{
-        display: none;
-
-    }
-
-    .menu-icon {
-        display: contents;
-
-    }
-    
-    .sidebar-title > span{
-        display: contents;
-
-    }
-    
-}
-
-@media screen  and (max-width: 768px){
-    .main-cards{
-        grid-template-columns: 3fr;
-        grid: 10px;
-        margin-bottom: 0;
-    }
-
-
-    .charts{
-        grid-template-columns: 1fr;
-        margin-top: 30px;
-    }
-
-
-    
-}
-
-
-@media screen  and (max-width: 576px){
-    .header-left{
-        display: none;
-    }
-    
-}
-
-        body{
-            background-color: rgba(85, 107, 47, 0.356);
-            font-size: normal arial ;
-        }
-
-        header{
-            text-align: center;
-        }
-
-       td {
-        border: 1px solid black;
-        padding: 8px;
-        text-align: center;
-        vertical-align: middle;
-    
-    }
-    main{
-        text-align: center;
-    }
-
-    table{
-    width: 500px;
-    height: 500px;
-    border-collapse: collapse;
-    }
-
-    td:hover{
-    color: brown;
-   }
-   .numero{
-    text-align: right;
-   }
-
+     body{
+        background-color: rgba(85, 107, 47, 0.356);
+        font-size: normal arial ;
         
+     }
+
+     header{
+        text-align: center;
+     }
+
+     td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+      text-align: justify;
+      vertical-align: middle;
+
+    
+     }
+     main{
+        text-align: center;
+     }
+
+     table{
+     width: 500px;
+     height: 500px;
+     border-collapse: collapse;
+     }
+
+     td:hover{
+     color: brown;
+     }
+     .numero{
+     text-align: right;
+    }     
     </style>
 </head>
 <body>
@@ -101,48 +53,86 @@
     <main>
 
         <table>
-            <tr class="nome">
-                <td>Milho</td>
-                <td class="numero">Janeiro-2025</td>
-                <td class="numero">90$</td>
-            </tr>
-            <tr>
-                <td>Sal</td>
-                <td class="numero">Fevereiro-2025</td>
-                <td class="numero">80$</td>
-            </tr>
-            <tr>
-                <td>oliveira</td>
-                <td class="numero">6.500</td>
-                <td class="numero">9.500</td>
-            </tr>
-            <tr>
-                <td>santana</td>
-                <td class="numero">3.500</td>
-                <td class="numero">3.500</td>
-            </tr>
-            <tr>
-                <td>honda</td>
-                <td class="numero">10.000</td>
-                <td class="numero">5%</td>
-            </tr>
-            <tr>
-                <td>Titan</td>
-                <td class="numero">10.500</td>
-                <td class="numero">16%</td>
-            </tr>
-            <tr>
-                <td>Pop 110</td>
-                <td class="numero">12.00</td>
-                <td class="numero">4%</td>
-            </tr>
-            <tr>
-                <td>fan</td>
-                <td class="numero">9.00</td>
-                <td class="numero">12%</td>
-            </tr>
-    
-        </table>
+        
+            <tbody>
+                <tr>
+                    <td class="numero">1</td>
+                    <td>Janeiro</td>
+                    <td class="num">44 420 459</td>
+                    <td class="num">21,88%</td>
+                </tr>
+                <tr>
+                    <td class="numero">2</td>
+                    <td>Fevereiro</td>
+                    <td class="num">20 538 718</td>
+                    <td class="num">10,11%</td>
+        
+                </tr>
+                <tr>
+                    <td class="numero">3</td>
+                    <td>Março</td>
+                    <td class="num">16 054 524</td>
+                    <td class="num">7,91%</td>
+                </tr>
+                <tr>
+                    <td class="numero">4</td>
+                    <td>Abril</td>
+                    <td class="num">14 136 417</td>
+                    <td class="num">6,96%</td>
+                </tr>
+                <tr>
+                    <td class="numero">5</td>
+                    <td>Maio</td>
+                    <td class="num">11 443 208</td>
+                    <td class="num">5,64%</td>
+                </tr>
+                <tr>
+                    <td class="numero">6</td>
+                    <td>Junho</td>
+                    <td class="num">10 880 506</td>
+                    <td class="num">5,36%</td>
+                </tr>
+                <tr>
+                    <td class="numero">7</td>
+                    <td>Julho</td>
+                    <td class="num">9 058 155</td>
+                    <td class="num">4,46%</td>
+                </tr>
+                <tr>
+                    <td class="numero">8</td>
+                    <td>Agosto</td>
+                    <td class="num">8 791 688</td>
+                    <td class="num">4,33%</td>
+                </tr>
+                <tr>
+                    <td class="numero">9</td>
+                    <td>Setembro</td>
+                    <td class="num">8 116 132</td>
+                    <td class="num">4,1%</td>
+                </tr>
+                <tr>
+                    <td class="numero">10</td>
+                    <td>Outubro</td>
+                    <td class="num">7 609 601</td>
+                    <td class="num">3,75%</td>
+                </tr>
+                <tr>
+                    <td class="numero">11</td>
+                    <td>Novembro</td>
+                    <td class="num">7 055 228</td>
+                    <td class="num">3,47%</td>
+                </tr>
+                <tr>
+                    <td class="numero">12</td>
+                    <td>Dezembro</td>
+                    <td class="num">6 775 152</td>
+                    <td class="num">3,34%</td>
+                </tr>
+                
+                
+            </tbody>
+
+       
 
     </main>
 
