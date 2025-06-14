@@ -68,11 +68,9 @@ var barChartOptions = {
 var barchart = new ApexCharts(document.querySelector(".bar-chart"), barChartOptions);
 barchart.render();
 
-
-
 //------------area chart---
 
-var areachartoptions = {
+var  areachartoptions = {
   series: [{
   name: 'Inflation',
   data: [10.3, 3.1, 4.0, 10.1, 4.0, 3.6, 3.2, 2.3, 1.4, 0.8, 0.5, 0.2]
