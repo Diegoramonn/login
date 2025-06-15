@@ -15,14 +15,14 @@
 
         </div>
         <div class="input-box">
-            <input type="text" class="input-field" placeholder="Email" autocomplete="on" required>
+            <input type="text" class="input-field" placeholder="login" id="login">
+            <input type="password" class="input-field" placeholder="Senha" id="Senha">
+
+            
+            
 
         </div>
 
-        <div class="input-box">
-            <input type="password" class="input-field" placeholder="Senha" autocomplete="off" required>
-
-        </div>
 
         <div class="forgot">
             <section>
@@ -31,30 +31,48 @@
 
             </section>
 
-            <section>
-                <a href="#">Esqueceu a senha </a>
-
-            </section>
 
         </div>
 
         <div>
             <div class="input-submit">
-                <button  class="submit-btn" id="submit"></button >
+                <button  class="submit-btn" id="submit" onclick="logar();"></button >
                 <label  for="submit">Entrar</label  >
-                <a href="/login/home/index.html"></a>
 
             </div>
         </div>
 
         <div class="sign-up-link">
-            <p>Não tem conta. Cadraste-se <a href="home/home/index.html"> Escreva-se</a></p>
             <p id="pe">Dev. Diego Ramon</p>
         </div>
         
         
 
     </div>
+
+
+    <script>
+
+        function logar(){
+            var email = document.getElementById('login').value;
+            var senha = document.getElementById('Senha').value;
+
+            if(email == "chico"  && senha == "6522" ) {
+                alert('sucesso');
+                location.href = "home/home/index.html";
+                
+            }if(email == "bruno"  && senha == "16701670" ) {
+                alert('sucesso');
+                location.href = "home/home/index.html";
+
+            }
+
+            
+            
+
+        }
+
+    </script>
 
     
     
