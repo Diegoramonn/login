@@ -6,7 +6,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"rel="stylesheet">
     <link rel="shortcut icon" href="imagens/sal.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="/home/style.css">
     <link rel="stylesheet" href="style.css">
     <title>MAXSAL/HOME </title>
     <style>
@@ -20,7 +19,8 @@
     </style>
 </head>
 <body>
-    <div class="grid-container">
+
+   <div class="grid-container">
 
         <header class="header">
             <div class="menu-icon" onclick="openSidebar()">
@@ -45,6 +45,10 @@
 
 
         </header>
+
+  
+
+      
 
 
         <aside id="sidebar">
@@ -209,7 +213,6 @@
  //-------------CHART--------------
 
  //----------BAR CHART
-
  var barChartOptions = {
   series: [{
     data: [5, 16, 14, 12, 10, 8]
@@ -251,11 +254,12 @@
       Text:"conunt"
     }
   }
- 
- };
 
- var barchart = new ApexCharts(document.querySelector(".bar-chart"), barChartOptions);
- barchart.render();
+};
+
+var barchart = new ApexCharts(document.querySelector(".bar-chart"), barChartOptions);
+barchart.render();
+ 
 
  //------------area chart---
 
