@@ -139,6 +139,8 @@ section > a{
 #pe{
     margin: 10px;
     padding: 10px;
+    font-family:monospace;
+    font-size: 1,5em;
 
 }
 
