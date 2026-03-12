@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de rotas </title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+        h1{
+            text-align: center;
+        }
+        .container{
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: auto;
+
+
+        }
+
+        input{
+            width:100%;
+            padding: 10px;
+            margin: 5px 0;
+        }
+        button{
+            width: 100%;
+            padding: 10px;
+            background: #27ae60;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover{
+            background:#27ae60 ;
+        }
+        table{
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        th, td{
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th{
+            background: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> Organizador de Rotas </h1>
+        <input type="text"  id=" cidade" placeholder="Cidade">
+        <input type="text"  id=" cliente " placeholder="Cliente ">
+        <input type="text"  id=" produto" placeholder="Produto">
+
+        <button onclick="adicionarRota"> Adicionar rota </button>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Cidade</th>
+                    <th>Cliente </th>
+                    <th>Produto</th>
+                </tr>
+            </thead>
+
+            <tbody id="tabelaRotas">
+
+            </tbody>
+
+
+        </table>
+
+
+
+    </div>
+
+    <script>
+        let rotas = []
+        function adicionarRotas() {
+            let cidade = document.getElementById("cidade").value
+            let cliente = documunte.getElementById( " cliente "). value
+            let produto = documente.getElementById( " PRODUTO ").value
+
+            let rota = {
+                cidade: cidade,
+                cliente: cliente,
+                produto: produto
+            }
+
+            rotas.push(rota)
+            mostrarRotas()
+
+        }
+
+        function mostrarRotas() {
+            let tabela = document.getElementById(" tabelaRotas ")
+            tabela.innerHTML = ""
+            rotas.forEach(function(entrega) {
+                tabela.innerHTML += 
+                <tr>
+                    <td>${entrega.cidade}</td>
+                    <td>${entrega.cliente}</td>
+                    <td>${entrega.produto}</td>
+
+
+                </tr>
+
+            })
+        }
+
+    </script>
+    
+</body>
+</html>
