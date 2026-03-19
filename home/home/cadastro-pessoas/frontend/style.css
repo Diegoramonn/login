@@ -25,4 +25,8 @@ button{
     background: green;
     color: white;
     border: none;
+    cursor: pointer;
+}
+button:hover{
+    background: rgba(0, 128, 0, 0.801);
 }
