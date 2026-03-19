@@ -72,7 +72,7 @@ body{
 .header{
     grid-area: header ;
     height: 70px;
-    background-color: #ffffff;
+    background-color: #ffffffac;
     display: flex;
     align-items: center;
     justify-content: space-between;
